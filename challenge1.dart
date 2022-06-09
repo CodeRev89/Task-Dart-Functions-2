@@ -3,8 +3,38 @@
  * Create a function named `printName`
  * - that just prints your name on the screen
  */
+void main() {
+  printName();
+  printAge(1989);
+  printHello("Ahmad", "en");
+  printMax(5, 10);
+}
 
-/**
+void printName() {
+  print("ahmad");
+}
+
+void printAge(int year) {
+  int sum = (2022 - year);
+  print("$sum");
+}
+
+void printHello(String name, String language) {
+  if (language == "en") {
+    print("hello $name");
+  } else if (language == "es") {
+    print("hola $name");
+  }
+}
+
+void printMax(int x, int y) {
+  if (x > y) {
+    print(x);
+  } else if (x < y) {
+    print(y);
+  }
+}
+/**void
  * Task 2:
  * Create a function named `printAge`
  * - that takes a birth year as a parameter,
